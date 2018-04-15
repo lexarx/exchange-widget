@@ -1,0 +1,142 @@
+.exchangeWidget {
+    font-family: Helvetica, Arial;
+    background: #eeeeee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    flex: 1 0 auto;
+}
+
+.exchangeElement {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+}
+
+.source {
+    background: #ffffff;
+}
+
+.leftColumn {
+    flex-grow: 1;
+}
+
+.rightColumn {
+    flex-grow: 10;
+}
+
+.currencySelect {
+    height: 30px;
+    font-size: 17px;
+    line-height: 22px;
+    outline: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmlld0JveD0iMCAtMjU2IDE3OTIgMTc5MiIKICAgaWQ9InN2ZzI5ODkiCiAgIHZlcnNpb249IjEuMSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC4zLjEgcjk4ODYiCiAgIHdpZHRoPSIxMDAlIgogICBoZWlnaHQ9IjEwMCUiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImFuZ2xlX2Rvd25fZm9udF9hd2Vzb21lLnN2ZyI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMjk5OSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczI5OTciIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSI2NDAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNDgwIgogICAgIGlkPSJuYW1lZHZpZXcyOTk1IgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp6b29tPSIwLjEzMTY5NjQzIgogICAgIGlua3NjYXBlOmN4PSI4OTYiCiAgICAgaW5rc2NhcGU6Y3k9Ijg5NiIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMjUiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcyOTg5IiAvPgogIDxnCiAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsLTEsMjg4LjU0MjM4LDEyNTUuMDUwOCkiCiAgICAgaWQ9ImcyOTkxIj4KICAgIDxwYXRoCiAgICAgICBkPSJtIDEwNzUsODAwIHEgMCwtMTMgLTEwLC0yMyBMIDU5OSwzMTEgcSAtMTAsLTEwIC0yMywtMTAgLTEzLDAgLTIzLDEwIEwgODcsNzc3IHEgLTEwLDEwIC0xMCwyMyAwLDEzIDEwLDIzIGwgNTAsNTAgcSAxMCwxMCAyMywxMCAxMywwIDIzLC0xMCBMIDU3Niw0ODAgOTY5LDg3MyBxIDEwLDEwIDIzLDEwIDEzLDAgMjMsLTEwIGwgNTAsLTUwIHEgMTAsLTEwIDEwLC0yMyB6IgogICAgICAgaWQ9InBhdGgyOTkzIgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIHN0eWxlPSJmaWxsOmN1cnJlbnRDb2xvciIgLz4KICA8L2c+Cjwvc3ZnPgo=');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 18px;
+}
+
+.balance {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+    white-space: nowrap;
+}
+
+.insufficientBalance {
+    color: #ee4449;
+}
+
+.fee {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+    text-align: right;
+}
+
+.amountInput {
+    text-align: right;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 5px;
+    font-size: 17px;
+    line-height: 22px;
+    outline: none;
+    background: #eeeeee;
+}
+
+.source .amountInput {
+    background: #ffffff;
+}
+
+.separator {
+    height: 22px;
+    margin: -11px 0;
+    position: relative;
+    text-align: center;
+}
+
+.exchangeRate {
+    display: inline-block;
+    background: #ffffff;
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid #eeeeee;
+    min-width: 40px;
+    height: 20px;
+}
+
+.swap {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: 4px 4px;
+    background-size: 12px 12px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjQ1OXB4IiBoZWlnaHQ9IjQ1OXB4IiB2aWV3Qm94PSIwIDAgNDU5IDQ1OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDU5IDQ1OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGcgaWQ9InN3YXAtdmVydCI+DQoJCTxwYXRoIGQ9Ik0zMzEuNSwzNTdWMTc4LjVoLTUxVjM1N0gyMDRsMTAyLDEwMmwxMDItMTAySDMzMS41eiBNMTUzLDBMNTEsMTAyaDc2LjV2MTc4LjVoNTFWMTAySDI1NUwxNTMsMHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==');
+    z-index: 2;
+}
+
+.bottom {
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.exchangeButton {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 10px;
+    background: #f2316a;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.exchangeButton[disabled] {
+    background: rgba(242, 49, 106, 0.4);
+}
